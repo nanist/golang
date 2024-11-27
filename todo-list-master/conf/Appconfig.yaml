@@ -6,9 +6,9 @@ log:
   max_backups: 7
 
 mysql:
-  host: "123.249.116.170"
+  host: "1.1.1.1"
   user: "root"              # 用户名
-  password: "!QAZ2wsx"          # 密码
+  password: "123456"          # 密码
   db: "todolist"
   Port: "3306"
   max_open_conns: 10
@@ -17,12 +17,12 @@ mysql:
 email:
   addr: "smtp.qq.com:25"
   identity: ""
-  username: "10266825281@qq.com"  # 发送方的邮箱
+  username: "1111111@qq.com"  # 发送方的邮箱
   password: "授权码"         # 邮箱的授权码
   host: "smtp.qq.com"
 
 redis:
-  host: "123.249.116.170"
+  host: "1.1.1.1"
   password: ""
   db : 0
   port : 60379
