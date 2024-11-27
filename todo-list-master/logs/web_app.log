@@ -1,0 +1,178 @@
+2024-11-24T17:05:40.462+0800	INFO	logger/logger.go:39	init logger success
+2024-11-24T17:05:40.478+0800	ERROR	todo-list-master/main.go:33	Error from init mysql	{"error": "dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
+2024-11-26T09:26:48.650+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T09:26:48.749+0800	ERROR	todo-list-master/main.go:33	Error from init mysql	{"error": "Error 1049: Unknown database 'todolist'"}
+2024-11-26T09:30:00.280+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T09:30:16.997+0800	INFO	logger/logger.go:77	/	{"status": 200, "method": "GET", "path": "/", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36", "errors": "", "cost": 0}
+2024-11-26T09:30:17.105+0800	INFO	logger/logger.go:77	/favicon.ico	{"status": 404, "method": "GET", "path": "/favicon.ico", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36", "errors": "", "cost": 0}
+2024-11-26T13:08:15.276+0800	ERROR	logic/user.go:51	Failed to VerfiyCaptcha	{"msg": "验证校验失败"}
+2024-11-26T13:08:15.278+0800	ERROR	controller/user.go:89	 Error from check user	{"email": "xxxxx@qq.com", "error": "验证码不一致"}
+2024-11-26T13:08:15.279+0800	INFO	logger/logger.go:77	/api/v1/login	{"status": 200, "method": "POST", "path": "/api/v1/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0029918}
+2024-11-26T13:08:41.997+0800	ERROR	logic/user.go:51	Failed to VerfiyCaptcha	{"msg": "验证校验失败"}
+2024-11-26T13:08:41.998+0800	ERROR	controller/user.go:89	 Error from check user	{"email": "10266825281@qq.com", "error": "验证码不一致"}
+2024-11-26T13:08:41.998+0800	INFO	logger/logger.go:77	/api/v1/login	{"status": 200, "method": "POST", "path": "/api/v1/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0005607}
+2024-11-26T13:09:12.625+0800	ERROR	dredis/captcha.go:31	Failed to get Key redis	{"error": "redis: nil"}
+2024-11-26T13:09:12.625+0800	ERROR	controller/user.go:29	SignUp logic error	{"error": "验证码已过期"}
+2024-11-26T13:09:12.625+0800	INFO	logger/logger.go:77	/api/v1/signup	{"status": 200, "method": "POST", "path": "/api/v1/signup", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0401033}
+2024-11-26T13:09:26.702+0800	ERROR	utils/sendEmail.go:65	Failed to send Email	{"msg": "邮箱发送失败", "error": "535 Login Fail. Please enter your authorization code to login. More information in https://service.mail.qq.com/detail/0/53"}
+2024-11-26T13:09:26.702+0800	ERROR	logic/captcha.go:19	Failed to send mail	{"error": "535 Login Fail. Please enter your authorization code to login. More information in https://service.mail.qq.com/detail/0/53"}
+2024-11-26T13:09:26.702+0800	ERROR	controller/captcha.go:29	Failed to set  Captcha	{"error": "535 Login Fail. Please enter your authorization code to login. More information in https://service.mail.qq.com/detail/0/53"}
+2024-11-26T13:09:26.702+0800	INFO	logger/logger.go:77	/api/v1/captcha	{"status": 200, "method": "GET", "path": "/api/v1/captcha", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.5525196}
+2024-11-26T13:09:29.668+0800	ERROR	utils/sendEmail.go:65	Failed to send Email	{"msg": "邮箱发送失败", "error": "535 Login Fail. Please enter your authorization code to login. More information in https://service.mail.qq.com/detail/0/53"}
+2024-11-26T13:09:29.668+0800	ERROR	logic/captcha.go:19	Failed to send mail	{"error": "535 Login Fail. Please enter your authorization code to login. More information in https://service.mail.qq.com/detail/0/53"}
+2024-11-26T13:09:29.668+0800	ERROR	controller/captcha.go:29	Failed to set  Captcha	{"error": "535 Login Fail. Please enter your authorization code to login. More information in https://service.mail.qq.com/detail/0/53"}
+2024-11-26T13:09:29.668+0800	INFO	logger/logger.go:77	/api/v1/captcha	{"status": 200, "method": "GET", "path": "/api/v1/captcha", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.4092986}
+2024-11-26T13:18:19.586+0800	ERROR	utils/jwt.go:105	Invalid AccessToken	{"error": "token is expired by 15818h44m15.5865322s"}
+2024-11-26T13:18:19.586+0800	WARN	middlewares/auth.go:31	Error Authorization
+2024-11-26T13:18:19.587+0800	INFO	logger/logger.go:77	/api/v1/tasks	{"status": 200, "method": "GET", "path": "/api/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0010443}
+2024-11-26T13:29:49.008+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 404, "method": "GET", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T13:30:12.631+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T13:31:12.269+0800	WARN	middlewares/auth.go:17	Error Authorization
+2024-11-26T13:31:12.270+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.00062}
+2024-11-26T13:31:30.448+0800	WARN	middlewares/auth.go:17	Error Authorization
+2024-11-26T13:31:30.448+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T13:31:32.281+0800	WARN	middlewares/auth.go:17	Error Authorization
+2024-11-26T13:31:32.281+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T13:31:42.424+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T13:32:00.373+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0000584}
+2024-11-26T14:00:12.325+0800	WARN	controller/task.go:140	Failed  to get user id	{"error": "用户未登录"}
+2024-11-26T14:00:12.325+0800	ERROR	controller/task.go:77	Error form checkLogin	{"error": "用户未登录"}
+2024-11-26T14:00:12.325+0800	INFO	logger/logger.go:77	/api/v1/tasks	{"status": 200, "method": "GET", "path": "/api/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0005126}
+2024-11-26T14:00:13.739+0800	WARN	controller/task.go:140	Failed  to get user id	{"error": "用户未登录"}
+2024-11-26T14:00:13.739+0800	ERROR	controller/task.go:77	Error form checkLogin	{"error": "用户未登录"}
+2024-11-26T14:00:13.739+0800	INFO	logger/logger.go:77	/api/v1/tasks	{"status": 200, "method": "GET", "path": "/api/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T14:07:29.107+0800	WARN	controller/task.go:140	Failed  to get user id	{"error": "用户未登录"}
+2024-11-26T14:07:29.107+0800	ERROR	controller/task.go:77	Error form checkLogin	{"error": "用户未登录"}
+2024-11-26T14:07:29.107+0800	INFO	logger/logger.go:77	/api/v1/tasks	{"status": 200, "method": "GET", "path": "/api/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T14:07:32.999+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0001313}
+2024-11-26T14:08:42.503+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0005299}
+2024-11-26T14:09:25.606+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T14:09:32.342+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0002305}
+2024-11-26T14:10:10.425+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T14:10:23.286+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T14:10:30.215+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T14:25:15.959+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T14:25:22.383+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.1608449}
+2024-11-26T14:28:10.404+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.1201795}
+2024-11-26T14:28:11.860+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.1403187}
+2024-11-26T14:28:33.857+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.144394}
+2024-11-26T14:28:35.480+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.1051834}
+2024-11-26T14:28:36.543+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.1302262}
+2024-11-26T14:29:08.068+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0995759}
+2024-11-26T14:30:28.266+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.1345065}
+2024-11-26T14:30:29.518+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0565448}
+2024-11-26T14:30:51.180+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0517937}
+2024-11-26T15:11:15.065+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0612244}
+2024-11-26T15:14:26.198+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T15:14:40.708+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0416992}
+2024-11-26T15:16:05.276+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0420448}
+2024-11-26T15:18:32.091+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0566495}
+2024-11-26T15:25:33.040+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T15:25:37.350+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0371235}
+2024-11-26T15:26:30.278+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T15:50:40.415+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T15:50:52.673+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=12", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.036981}
+2024-11-26T15:50:59.939+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0449733}
+2024-11-26T17:15:35.837+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T17:15:41.055+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0480912}
+2024-11-26T20:02:22.443+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T20:02:29.363+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0403853}
+2024-11-26T20:04:49.642+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T20:04:55.903+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0412588}
+2024-11-26T20:06:54.293+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T20:07:03.271+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0502581}
+2024-11-26T20:23:10.488+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T20:24:06.436+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0421593}
+2024-11-26T20:31:24.125+0800	INFO	logger/logger.go:77	/api/v1/GetTestListHandler	{"status": 404, "method": "GET", "path": "/api/v1/GetTestListHandler", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T20:31:49.747+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 404, "method": "GET", "path": "/api/v1/testList", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T20:31:52.758+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 404, "method": "GET", "path": "/api/v1/testList", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T20:32:08.145+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T20:32:56.179+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T20:33:07.207+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 200, "method": "GET", "path": "/api/v1/testList", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0412159}
+2024-11-26T20:33:18.035+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 200, "method": "GET", "path": "/api/v1/testList", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0382311}
+2024-11-26T21:23:32.655+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 200, "method": "GET", "path": "/api/v1/testList", "query": "1,2", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0388816}
+2024-11-26T21:23:53.464+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 200, "method": "GET", "path": "/api/v1/testList", "query": "1,2", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0394763}
+2024-11-26T21:24:38.871+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T21:24:45.188+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 200, "method": "GET", "path": "/api/v1/testList", "query": "1,2", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0389185}
+2024-11-26T21:25:10.794+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 200, "method": "GET", "path": "/api/v1/testList", "query": "id=1,2", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0454266}
+2024-11-26T21:31:45.276+0800	INFO	logger/logger.go:39	init logger success
+2024-11-26T21:31:52.639+0800	INFO	logger/logger.go:77	/api/v1/testList	{"status": 200, "method": "GET", "path": "/api/v1/testList", "query": "id=1,2", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0392205}
+2024-11-26T21:33:09.907+0800	INFO	logger/logger.go:77	/api/v1/testt	{"status": 404, "method": "GET", "path": "/api/v1/testt", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0}
+2024-11-26T21:33:15.869+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.42.0", "errors": "", "cost": 0.0401871}
+2024-11-26T21:39:22.735+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.0419228}
+2024-11-27T09:41:02.628+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T09:46:01.374+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T09:47:08.480+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T09:47:51.033+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T09:48:02.210+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T09:51:35.987+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T09:52:23.263+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T09:52:53.936+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T09:53:01.410+0800	INFO	logger/logger.go:77	/v1/task	{"status": 404, "method": "POST", "path": "/v1/task", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T09:53:12.563+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "GET", "path": "/api/v1/test", "query": "id=1", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.0450917}
+2024-11-27T09:55:20.762+0800	WARN	controller/task.go:140	Failed  to get user id	{"error": "用户未登录"}
+2024-11-27T09:55:20.763+0800	ERROR	controller/task.go:112	Error form checkLogin	{"error": "用户未登录"}
+2024-11-27T09:55:20.763+0800	INFO	logger/logger.go:77	/api/v1/tasks	{"status": 200, "method": "PUT", "path": "/api/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.000538}
+2024-11-27T09:55:33.551+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:00:44.493+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T10:00:57.227+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "PUT", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1057605}
+2024-11-27T10:08:07.703+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "PUT", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1265215}
+2024-11-27T10:16:59.350+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T10:17:13.124+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "PUT", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1158037}
+2024-11-27T10:20:15.515+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:27:52.592+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T10:28:05.891+0800	INFO	logger/logger.go:77	/v1/tasks	{"status": 404, "method": "DELETE", "path": "/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:39:35.925+0800	INFO	logger/logger.go:77	/v1/tasks	{"status": 404, "method": "DELETE", "path": "/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:39:46.345+0800	INFO	logger/logger.go:77	/v1/tasks	{"status": 404, "method": "POST", "path": "/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:39:58.488+0800	INFO	logger/logger.go:77	/v1/tasks	{"status": 404, "method": "DELETE", "path": "/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:40:08.672+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:44:15.716+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:46:12.886+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:46:16.645+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:46:22.982+0800	INFO	logger/logger.go:77	/v1/tasks	{"status": 404, "method": "DELETE", "path": "/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:46:31.747+0800	INFO	logger/logger.go:77	/v1/tasks	{"status": 404, "method": "DELETE", "path": "/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T10:51:44.894+0800	INFO	logger/logger.go:77	/v1/tasks	{"status": 404, "method": "DELETE", "path": "/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T11:05:42.245+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:06:08.071+0800	INFO	logger/logger.go:77	/v1/tasks	{"status": 404, "method": "DELETE", "path": "/v1/tasks", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T11:06:59.491+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "DELETE", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T11:07:24.607+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T11:09:11.010+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:09:20.058+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "POST", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T11:10:13.815+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:10:33.621+0800	INFO	logger/logger.go:77	/v1/test123	{"status": 404, "method": "POST", "path": "/v1/test123", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T11:11:33.370+0800	ERROR	logic/user.go:51	Failed to VerfiyCaptcha	{"msg": "验证校验失败"}
+2024-11-27T11:11:33.370+0800	ERROR	controller/user.go:89	 Error from check user	{"email": "10266825281@qq.com", "error": "验证码不一致"}
+2024-11-27T11:11:33.371+0800	INFO	logger/logger.go:77	/api/v1/login	{"status": 200, "method": "POST", "path": "/api/v1/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.0005667}
+2024-11-27T11:12:59.897+0800	INFO	logger/logger.go:77	/v1/test	{"status": 404, "method": "DELETE", "path": "/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0}
+2024-11-27T11:13:45.099+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:14:08.426+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "POST", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.121624}
+2024-11-27T11:15:17.955+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "POST", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1493957}
+2024-11-27T11:16:12.945+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1212004}
+2024-11-27T11:17:19.937+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1211892}
+2024-11-27T11:18:08.946+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "POST", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1262282}
+2024-11-27T11:18:45.360+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "POST", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1263268}
+2024-11-27T11:19:14.402+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "POST", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1236621}
+2024-11-27T11:19:33.161+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1188446}
+2024-11-27T11:21:39.975+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.122464}
+2024-11-27T11:26:55.171+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:27:06.916+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1323063}
+2024-11-27T11:28:22.144+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1319576}
+2024-11-27T11:32:15.612+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:32:22.934+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1238341}
+2024-11-27T11:33:20.529+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:33:28.758+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1257486}
+2024-11-27T11:35:14.121+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:35:25.907+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1291431}
+2024-11-27T11:43:46.251+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:44:08.789+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1259613}
+2024-11-27T11:47:23.676+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:47:50.594+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1349124}
+2024-11-27T11:50:48.396+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:51:22.124+0800	ERROR	logic/task.go:86	Faild to delete tasks in mysql	{"error": "invalid connection"}
+2024-11-27T11:51:22.124+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 19.2152025}
+2024-11-27T11:51:45.358+0800	ERROR	logic/task.go:28	Faild to insert task in redis	{"error": "context deadline exceeded"}
+2024-11-27T11:51:45.358+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "POST", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.6724384}
+2024-11-27T11:53:14.544+0800	INFO	logger/logger.go:39	init logger success
+2024-11-27T11:53:31.692+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "POST", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.133118}
+2024-11-27T11:53:44.983+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.1344552}
+2024-11-27T14:27:12.933+0800	INFO	logger/logger.go:77	/api/v1/test	{"status": 200, "method": "DELETE", "path": "/api/v1/test", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.43.0", "errors": "", "cost": 0.247325}
